@@ -1,0 +1,20 @@
+[
+    {
+        "ip": "::1",
+        "country": "Local",
+        "city": "Localhost",
+        "region": "Local",
+        "zip": "00000",
+        "isp": "Local Network",
+        "org": "Local Network",
+        "company": "Local Network",
+        "status": "allowed",
+        "reason": "CLEAN IP",
+        "device_type": "Desktop",
+        "device_brand": "Unknown",
+        "os": "macOS",
+        "browser": "Chrome",
+        "user_agent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36",
+        "timestamp": "2025-11-26 08:47:25"
+    }
+]

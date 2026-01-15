@@ -1,0 +1,19 @@
+{
+    "Result": {
+        "IsSuccess": false,
+        "HasWarning": false,
+        "HasSuccess": false,
+        "HasInformation": false,
+        "HasAnyResultElement": true,
+        "Error": {
+            "Code": "ExecutingTransactionNotMatch",
+            "DisplayMessage": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut. Sollte der Fehler abermals auftreten, kontaktieren Sie bitte unseren Kundenservice aus Deutschland unter +49 40 890 99-600 und aus Österreich unter 0800 445 544.",
+            "ExceptionMessage": ""
+        },
+        "Title": "Fehler",
+        "PageDirectionInfo": {
+            "RedirectionParameter": "error",
+            "PageDirection": "RedirectToPage"
+        }
+    }
+}

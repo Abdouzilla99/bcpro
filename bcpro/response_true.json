@@ -1,0 +1,128 @@
+{
+    "Item": {
+        "Request": {
+            "DiscardPasswordHashCheck": false,
+            "CustomerType": "Retail",
+            "UserID": 0,
+            "NeedCaptcha": false,
+            "LandingPage": "Dashboard",
+            "IsCaptchaRequired": false,
+            "SkipAuthenticationItem": false,
+            "SkippedAuthItem": "Undefined",
+            "IsNotLoginTransaction": false,
+            "UserName": "Silkemanuela70",
+            "SelectedApprovalRule": 0,
+            "SelectedApprovalSubRule": 0,
+            "DisableNonStp": false,
+            "IsSourceFutureDated": false,
+            "OpenCaseAndExecuteTransaction": false,
+            "OpenConditionalCase": false,
+            "OpenCaseAndNotExecute": false
+        },
+        "Response": {
+            "Customer": {
+                "UserId": 2387790,
+                "UserName": "silkemanuela70",
+                "IsMigrated": false,
+                "IsStaff": false,
+                "LogonType": "Undefined",
+                "IsFirstTimeLogin": false,
+                "RoleName": "Admin",
+                "BlockReason": "Undefined",
+                "AccountUserType": "Undefined",
+                "AllowBanner": true,
+                "NSIDoNotDisturb": false,
+                "HasG3ActiveStatus": false,
+                "UpdateG3ActiveStatus": false,
+                "CustomerType": "Retail",
+                "CustomerSubType": "Undefined",
+                "CustomerStatus": "Undefined",
+                "FullName": "",
+                "DefaultPhoneNumber": "",
+                "GroupLevel": "",
+                "GroupLevelID": 0,
+                "MaskedMobilePhoneNumber": "***********6108",
+                "SCHOnly": false,
+                "IsCustomerEnabledForAppRating": false
+            },
+            "OTPRequirementReason": "Undefined",
+            "UniqueKey": "e4b3b2e4-e22b-4519-a599-00032c606162",
+            "CustomerType": "Undefined",
+            "RetryCount": 0,
+            "NextFlowItemType": "SuccessfulAuthentication",
+            "LoginResult": "Undefined",
+            "Cached": false
+        },
+        "TransactionHeader": {
+            "SelectedRuleSet": 0,
+            "Customer": {
+                "UserId": 0,
+                "IsFirstTimeLogin": false,
+                "AccountUserType": "Undefined",
+                "HasG3ActiveStatus": false,
+                "CustomerType": "Retail",
+                "CustomerSubType": "Undefined",
+                "FullName": "",
+                "MaskedMobilePhoneNumber": "",
+                "SCHOnly": false,
+                "IsCustomerEnabledForAppRating": false
+            },
+            "TransactionDefinition": {
+                "TransactionName": "GetAccountList",
+                "TransactionType": "NonFinancial",
+                "KeepChangeSet": false
+            },
+            "ExecutingTransactionName": "LoginTransaction",
+            "Channel": {
+                "ChannelID": 2,
+                "ChannelType": "InternetBanking"
+            },
+            "UniqueKey": "638997397438509366"
+        },
+        "StepConfig": {
+            "FlowName": "LoginTransaction",
+            "ModuleName": "VeriBranch.FrontEnd.Login",
+            "ControllerName": "",
+            "TemplateUrl": "",
+            "StepName": "MainPage",
+            "EnableNext": false,
+            "EnablePrevious": false,
+            "HeaderText": "Login",
+            "StepText": "MainPage",
+            "HeaderMessage": "",
+            "ValidationConfig": {
+                "ControlList": []
+            },
+            "ShowReceiptButton": false,
+            "ShowContract": false,
+            "ShowRepeatTransactionButton": false,
+            "MasterUIView": {
+                "Disabled": true
+            },
+            "DisableDynamicValidation": false,
+            "Parkable": false,
+            "ControlAuthorizationConfig": [],
+            "HasHelpInfo": false
+        },
+        "StepResources": [
+            {
+                "StepName": "FirstLevel",
+                "HeaderText": "Login",
+                "StepText": "FirstLevel"
+            },
+            {
+                "StepName": "MainPage",
+                "HeaderText": "Login",
+                "StepText": "MainPage"
+            }
+        ],
+        "SystemDateTime": "2025-11-26T07:43:51.5184357+00:00"
+    },
+    "Result": {
+        "IsSuccess": true,
+        "HasWarning": false,
+        "HasSuccess": false,
+        "HasInformation": false,
+        "HasAnyResultElement": false
+    }
+}

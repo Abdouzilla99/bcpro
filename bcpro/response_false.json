@@ -1,0 +1,306 @@
+{
+    "Item": {
+        "Request": {
+            "DiscardPasswordHashCheck": false,
+            "CustomerType": "Retail",
+            "UserID": 0,
+            "NeedCaptcha": false,
+            "LandingPage": "Dashboard",
+            "IsCaptchaRequired": false,
+            "SkipAuthenticationItem": false,
+            "SkippedAuthItem": "Undefined",
+            "IsNotLoginTransaction": false,
+            "UserName": "kjdbaejk",
+            "SelectedApprovalRule": 0,
+            "SelectedApprovalSubRule": 0,
+            "DisableNonStp": false,
+            "IsSourceFutureDated": false,
+            "OpenCaseAndExecuteTransaction": false,
+            "OpenConditionalCase": false,
+            "OpenCaseAndNotExecute": false
+        },
+        "Response": {
+            "RemainingRetryCount": 0,
+            "OTPRequirementReason": "Undefined",
+            "CustomerType": "Undefined",
+            "RetryCount": 0,
+            "NextFlowItemType": "Undefined",
+            "LoginResult": "Undefined",
+            "Cached": false
+        },
+        "TransactionHeader": {
+            "SelectedRuleSet": 0,
+            "Customer": {
+                "UserId": 0,
+                "IsFirstTimeLogin": false,
+                "AccountUserType": "Undefined",
+                "HasG3ActiveStatus": false,
+                "CustomerType": "Retail",
+                "CustomerSubType": "Undefined",
+                "FullName": "",
+                "MaskedMobilePhoneNumber": "",
+                "SCHOnly": false,
+                "IsCustomerEnabledForAppRating": false
+            },
+            "TransactionDefinition": {
+                "TransactionName": "LoginTransaction",
+                "TransactionType": "Login",
+                "GroupTypeName": "Login",
+                "KeepChangeSet": false
+            },
+            "ExecutingTransactionName": "LoginTransaction",
+            "Channel": {
+                "ChannelID": 2,
+                "ChannelType": "InternetBanking"
+            },
+            "UniqueKey": "638997397438509366"
+        },
+        "StepConfig": {
+            "FlowName": "LoginTransaction",
+            "ModuleName": "VeriBranch.FrontEnd.Login",
+            "ControllerName": "",
+            "TemplateUrl": "",
+            "StepName": "FirstLevel",
+            "EnableNext": true,
+            "EnablePrevious": false,
+            "HeaderText": "Login",
+            "HeaderMessage": "",
+            "ValidationConfig": {
+                "ControlList": [
+                    {
+                        "ControlID": "UserName",
+                        "ValidatorList": [
+                            {
+                                "Parameters": [
+                                    {
+                                        "PropertyName": "EmptyValue"
+                                    }
+                                ],
+                                "DisableDynamicValidation": false,
+                                "PropertyName": "vm.Request.UserName",
+                                "EnabledExpression": "vm.Request.IsMimickingRequest !=true",
+                                "ControlID": "UserName",
+                                "StepName": "FirstLevel",
+                                "Name": "UserNameRequired",
+                                "TypeSpecified": false,
+                                "ResourceKey": "Validation.UserNameRequired",
+                                "ResourceType": "Global",
+                                "ResourceTypeSpecified": true,
+                                "ErrorMessage": "Bitte tragen Sie Ihren Benutzernamen ein.",
+                                "MaxLengthSpecified": false,
+                                "MinLengthSpecified": false,
+                                "ValidateEmptyString": true,
+                                "ValidateEmptyStringSpecified": true,
+                                "ClientSideMethodName": "RequiredValidator",
+                                "ValidationGroup": "FirstLevel",
+                                "SetFocusOnError": true,
+                                "SetFocusOnErrorSpecified": true,
+                                "ConstErrorMessage": "Bitte tragen Sie Ihren Benutzernamen ein."
+                            }
+                        ]
+                    },
+                    {
+                        "ControlID": "Password",
+                        "ValidatorList": [
+                            {
+                                "Parameters": [
+                                    {
+                                        "PropertyName": "EmptyValue"
+                                    }
+                                ],
+                                "DisableDynamicValidation": false,
+                                "PropertyName": "vm.Request.Password",
+                                "EnabledExpression": "vm.Request.IsMimickingRequest !=true",
+                                "ControlID": "Password",
+                                "StepName": "FirstLevel",
+                                "Name": "PasswordRequired",
+                                "TypeSpecified": false,
+                                "ResourceKey": "Validation.PasswordRequired",
+                                "ResourceType": "Global",
+                                "ResourceTypeSpecified": true,
+                                "ErrorMessage": "Bitte geben Sie Ihr Passwort ein.",
+                                "MaxLengthSpecified": false,
+                                "MinLengthSpecified": false,
+                                "ValidateEmptyString": true,
+                                "ValidateEmptyStringSpecified": true,
+                                "ClientSideMethodName": "RequiredValidator",
+                                "ValidationGroup": "FirstLevel",
+                                "SetFocusOnError": true,
+                                "SetFocusOnErrorSpecified": true,
+                                "ConstErrorMessage": "Bitte geben Sie Ihr Passwort ein."
+                            }
+                        ]
+                    },
+                    {
+                        "ControlID": "Captcha",
+                        "ValidatorList": [
+                            {
+                                "DisableDynamicValidation": false,
+                                "PropertyName": "vm.Request.Captcha",
+                                "EnabledExpression": "",
+                                "ControlID": "Captcha",
+                                "StepName": "FirstLevel",
+                                "Name": "CaptchaValidator",
+                                "TypeSpecified": false,
+                                "ResourceKey": "Validation.CaptchaRequired",
+                                "ResourceType": "Global",
+                                "ResourceTypeSpecified": true,
+                                "ErrorMessage": "Bitte geben Sie den richtigen CAPTCHA ein.",
+                                "MaxLengthSpecified": false,
+                                "MinLengthSpecified": false,
+                                "ValidateEmptyString": true,
+                                "ValidateEmptyStringSpecified": true,
+                                "ClientSideMethodName": "IsCaptchaAnswerValid",
+                                "SetFocusOnError": true,
+                                "SetFocusOnErrorSpecified": true,
+                                "ConstErrorMessage": "Bitte geben Sie den richtigen CAPTCHA ein."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "ShowReceiptButton": false,
+            "ShowContract": false,
+            "ShowRepeatTransactionButton": false,
+            "MasterUIView": {
+                "Disabled": true
+            },
+            "DisableDynamicValidation": false,
+            "Parkable": false,
+            "ControlAuthorizationConfig": [],
+            "HasHelpInfo": false
+        },
+        "SystemDateTime": "2025-11-26T07:43:27.6589165+00:00"
+    },
+    "Result": {
+        "IsSuccess": false,
+        "HasWarning": false,
+        "HasSuccess": false,
+        "HasInformation": false,
+        "HasAnyResultElement": true,
+        "Error": {
+            "Code": "WrongPasswordOrUserCode",
+            "DisplayMessage": "Ihre Eingaben sind nicht richtig. Ihr Zugang wird nach drei Passwort-Fehleingaben gesperrt. Über „Zugangsdaten vergessen\", können Sie ein neues Passwort festlegen. Für das Tagesgeld-Online-Banking besuchen Sie bitte service.barclays.de.  (124)",
+            "ExceptionMessage": ""
+        },
+        "Title": "Fehler",
+        "PageDirectionInfo": {
+            "RedirectionStep": {
+                "FlowName": "LoginTransaction",
+                "ModuleName": "VeriBranch.FrontEnd.Login",
+                "ControllerName": "",
+                "TemplateUrl": "",
+                "StepName": "FirstLevel",
+                "EnableNext": true,
+                "EnablePrevious": false,
+                "HeaderText": "Login",
+                "HeaderMessage": "",
+                "ValidationConfig": {
+                    "ControlList": [
+                        {
+                            "ControlID": "UserName",
+                            "ValidatorList": [
+                                {
+                                    "Parameters": [
+                                        {
+                                            "PropertyName": "EmptyValue"
+                                        }
+                                    ],
+                                    "DisableDynamicValidation": false,
+                                    "PropertyName": "vm.Request.UserName",
+                                    "EnabledExpression": "vm.Request.IsMimickingRequest !=true",
+                                    "ControlID": "UserName",
+                                    "StepName": "FirstLevel",
+                                    "Name": "UserNameRequired",
+                                    "TypeSpecified": false,
+                                    "ResourceKey": "Validation.UserNameRequired",
+                                    "ResourceType": "Global",
+                                    "ResourceTypeSpecified": true,
+                                    "ErrorMessage": "Bitte tragen Sie Ihren Benutzernamen ein.",
+                                    "MaxLengthSpecified": false,
+                                    "MinLengthSpecified": false,
+                                    "ValidateEmptyString": true,
+                                    "ValidateEmptyStringSpecified": true,
+                                    "ClientSideMethodName": "RequiredValidator",
+                                    "ValidationGroup": "FirstLevel",
+                                    "SetFocusOnError": true,
+                                    "SetFocusOnErrorSpecified": true,
+                                    "ConstErrorMessage": "Bitte tragen Sie Ihren Benutzernamen ein."
+                                }
+                            ]
+                        },
+                        {
+                            "ControlID": "Password",
+                            "ValidatorList": [
+                                {
+                                    "Parameters": [
+                                        {
+                                            "PropertyName": "EmptyValue"
+                                        }
+                                    ],
+                                    "DisableDynamicValidation": false,
+                                    "PropertyName": "vm.Request.Password",
+                                    "EnabledExpression": "vm.Request.IsMimickingRequest !=true",
+                                    "ControlID": "Password",
+                                    "StepName": "FirstLevel",
+                                    "Name": "PasswordRequired",
+                                    "TypeSpecified": false,
+                                    "ResourceKey": "Validation.PasswordRequired",
+                                    "ResourceType": "Global",
+                                    "ResourceTypeSpecified": true,
+                                    "ErrorMessage": "Bitte geben Sie Ihr Passwort ein.",
+                                    "MaxLengthSpecified": false,
+                                    "MinLengthSpecified": false,
+                                    "ValidateEmptyString": true,
+                                    "ValidateEmptyStringSpecified": true,
+                                    "ClientSideMethodName": "RequiredValidator",
+                                    "ValidationGroup": "FirstLevel",
+                                    "SetFocusOnError": true,
+                                    "SetFocusOnErrorSpecified": true,
+                                    "ConstErrorMessage": "Bitte geben Sie Ihr Passwort ein."
+                                }
+                            ]
+                        },
+                        {
+                            "ControlID": "Captcha",
+                            "ValidatorList": [
+                                {
+                                    "DisableDynamicValidation": false,
+                                    "PropertyName": "vm.Request.Captcha",
+                                    "EnabledExpression": "",
+                                    "ControlID": "Captcha",
+                                    "StepName": "FirstLevel",
+                                    "Name": "CaptchaValidator",
+                                    "TypeSpecified": false,
+                                    "ResourceKey": "Validation.CaptchaRequired",
+                                    "ResourceType": "Global",
+                                    "ResourceTypeSpecified": true,
+                                    "ErrorMessage": "Bitte geben Sie den richtigen CAPTCHA ein.",
+                                    "MaxLengthSpecified": false,
+                                    "MinLengthSpecified": false,
+                                    "ValidateEmptyString": true,
+                                    "ValidateEmptyStringSpecified": true,
+                                    "ClientSideMethodName": "IsCaptchaAnswerValid",
+                                    "SetFocusOnError": true,
+                                    "SetFocusOnErrorSpecified": true,
+                                    "ConstErrorMessage": "Bitte geben Sie den richtigen CAPTCHA ein."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ShowReceiptButton": false,
+                "ShowContract": false,
+                "ShowRepeatTransactionButton": false,
+                "MasterUIView": {
+                    "Disabled": true
+                },
+                "DisableDynamicValidation": false,
+                "Parkable": false,
+                "ControlAuthorizationConfig": [],
+                "HasHelpInfo": false
+            },
+            "PageDirection": "RedirectToSpecifiedStep"
+        }
+    }
+}
